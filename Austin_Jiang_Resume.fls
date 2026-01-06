@@ -1,8 +1,8 @@
-PWD /Users/austin/Documents/Austin_Jiang_CV
+PWD /Users/austin/Documents/Austin_Jiang_Resume
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/austin/Documents/Austin_Jiang_CV/Austin_Jiang_Resume.tex
+INPUT /Users/austin/Documents/Austin_Jiang_Resume/Austin_Jiang_Resume.tex
 OUTPUT Austin_Jiang_Resume.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
