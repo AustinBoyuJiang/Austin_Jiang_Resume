@@ -1,0 +1,186 @@
+\newif\ifanonymized
+%\anonymizedtrue   % 打开匿名版
+\anonymizedfalse    % 打开实名版
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \if\relax\detokenize{#1}\relax
+      #2
+    \else
+      \textbf{#1}: #2
+    \fi
+    \vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3}%
+      \if\relax\detokenize{#4}\relax
+      \else
+        \;$|$\;\textbf{\small #4}%
+      \fi
+      & \textit{\small #5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------Heading-----------------
+
+\begin{center}
+  \ifanonymized
+    \textbf{\Huge \scshape Anonymous} \\ \vspace{1pt}
+    \small
+    Anonymous $|$ Anonymous $|$ Anonymous $|$ Anonymous
+  \else
+    \textbf{\Huge \scshape Austin Jiang} \\ \vspace{1pt}
+    \small
+    +1 (604) 754-1808 \;$|$\;
+    \href{mailto:a68jiang@uwaterloo.ca}{a68jiang@uwaterloo.ca} \;$|$\;
+    \href{https://www.linkedin.com/in/austin-boyu-jiang}{linkedin.com/in/austin-boyu-jiang} \;$|$\;
+    \href{https://github.com/AustinBoyuJiang}{github.com/AustinBoyuJiang}
+  \fi
+\end{center}
+
+
+%-----------Education-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, ON, Canada}
+      {Honours Bachelor of Computer Science\;$|$\;Major GPA: 4.0/4.0}{}{Sep 2025 -- Jun 2029}
+      
+      \resumeItemListStart
+      \resumeItem{Scholarships}{Mathematics National Scholarship, President’s Scholarship of Distinction}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------Experience-----------------
+\section{Experience}
+    \resumeSubHeadingListStart
+    
+    \resumeSubheading
+    {Multicore Lab, University of Waterloo}{Waterloo, ON, Canada}
+    {Undergraduate Research Assistant (supervised by Dr. Trevor Brown)}{C++, CUDA}{Sep 2025 -- Present}
+    \resumeItemListStart
+        \resumeItem{}{Contributed to extending Verlib (PPoPP’24) with \textbf{lock-free data structures on GPU} for efficient range queries.}
+        \resumeItem{}{Implemented a CPU baseline (hash map with global locking) for controlled performance comparison.}
+        \resumeItem{}{Migrated the build to the \textbf{CUDA toolchain (nvcc)}, resolving host-device and compiler compatibility issues.}
+        \resumeItem{}{Developed a \textbf{generic VerlibAdapter abstraction} to support both \textbf{versioned and non-versioned} data structures.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Wolfram Research}{Remote}
+    {Research Intern (Wolfram Emerging Leaders Program '25)}{Mathematica, Wolfram Kernels}{Sep 2025 -- Present}
+    \resumeItemListStart
+    \resumeItem{}{Built a cellular automata \textbf{parallel computing} engine with tiled updates and halo exchange for correctness.}
+    \resumeItem{}{Implemented sparse frontier updates plus dense scans, achieving a \textbf{127\% speedup} on low activity states.}
+    \resumeItem{}{Designed a \textbf{benchmark harness} reporting updates per second, active ratio, and scheduling overhead.}
+    \resumeItem{}{Designed a \textbf{load balancing strategy} with imbalance monitoring and tile repartitioning across \textbf{multiple kernels}.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Wolfram Research}{Remote}
+    {Research Intern (Wolfram Emerging Leaders Program '24)}{Mathematica}{Sep 2024 -- Jan 2025}
+    \resumeItemListStart
+        \resumeItem{}{Designed a voxelization pipeline converting 3D meshes into binary grids for cellular automata simulation.}
+        \resumeItem{}{Developed algorithms to detect unsupported and overhanging regions critical for 3D printing infill.}
+        \resumeItem{}{Designed \textbf{benchmarking metrics} to measure density, connectivity, and printability of generated infills.}
+        \resumeItem{}{Produced a first author research paper with reproducible code and benchmarks, presented at the \textbf{Wolfram Technology Conference 2025}.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------Projects-----------------
+\section{Projects}
+  \resumeSubHeadingListStart \setlength{\itemsep}{0.7em}
+    \resumeSubItem{\href{https://github.com/AustinBoyuJiang/lambda-interpreter}{Lambda Calculus Interpreter} $|$\;C++}{Built a Lambda Calculus interpreter with a parser, AST, and normal order evaluator, using de Bruijn indices to avoid variable capture and supporting curried forms.
+      }
+    \resumeSubItem{\href{https://github.com/AustinBoyuJiang/LookAround-AI}{LookAround AI}, AdventureX (Multimodel Track Winner) $|$\;Python, React}{Built a voice controlled multi-agent tour guide using TEN Framework, integrating Google Maps Street View API for route narration.
+    }
+    \resumeSubItem{\href{https://github.com/AustinBoyuJiang/Zebra-Giraffe-Swap}{Zebra Giraffe Swap} $|$\;Google Cloud Platform, PyTorch}{Built a concept-swapping fine-tuning model via selective UNet training, implemented in PyTorch with Hugging Face Diffusers, using a preprocessing pipeline on COCO 2017.}
+    \resumeSubItem{\href{https://austinjiang.com/}{Personal Infrastructure \& Services} $|$\;Linux, FastAPI, SQL}{Built \& maintained a personal Linux server hosting a full stack website behind Nginx, poste.io email, OpenVPN, cloud storage, and FastAPI + SQL project backends.}
+
+  \resumeSubHeadingListEnd
+  
+  %-----------Achievements and Awards-----------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubItem {\href{https://www.facebook.com/codingcompetitions/hacker-cup/2025/certificate/1204009674111947}{Meta Hacker Cup Round 2}}
+      {Ranked 813th out of 13779 participants overall, top 6\% worldwide.}
+    \resumeSubItem {Generation Google Scholarship}
+      {Google’s flagship undergraduate scholarship for impact in technology (1 of 55).}
+    \resumeSubItem {Canadian Computing Olympiad \href{https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2024CCOResults.pdf}{2024} \& \href{https://cemc.uwaterloo.ca/sites/default/files/documents/2025/cco_summary.pdf}{2025}}
+      {Achieved silver medals, placing top 10 in a national contest twice.}
+    \resumeSubItem {USACO 2024 (Platinum)} {Achieved the highest division of the USA Computing Olympiad.}
+  \resumeSubHeadingListEnd
+
+
+%--------Skills------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \resumeSubItem {Languages/Framework}{C++, C, Python, Java, C\#, Bash, JavaScript, TypeScript, Rust, React, Node.js}
+    \resumeSubItem {Tools/Libraries}{Linux, Git, CUDA, CMake, PyTorch, TensorFlow, SQL, NumPy, pandas, Docker, Nginx, Flask, FastAPI, Express}
+    \resumeSubItem {Concepts}{Concurrency, Lock-Free Data Structures, Memory Models, Parallel Algorithms, High-Performance Computing, Database Systems, Full Stack Development, Data Processing}
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
