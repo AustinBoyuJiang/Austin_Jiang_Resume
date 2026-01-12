@@ -1,2 +1,36 @@
 .DS_Store
 .vscode
+
+# LaTeX core auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# BibTeX and bibliography
+*.bbl
+*.blg
+
+# Indexing and glossaries
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.glg
+*.ist
+
+# Beamer
+*.nav
+*.snm
+*.vrb
+
+# Temporary and backup files
+*~
+*.bak
+*.tmp
