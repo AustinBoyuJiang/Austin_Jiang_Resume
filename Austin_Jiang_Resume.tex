@@ -67,9 +67,9 @@
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
-\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemii}{\raisebox{0.2ex}{\scriptsize$\bullet$}}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -150,7 +150,7 @@
 
 %-----------Projects-----------------
 \section{Projects}
-  \resumeSubHeadingListStart \setlength{\itemsep}{0.7em}
+  \resumeSubHeadingListStart \setlength{\itemsep}{0.8em}
     \resumeSubItem{\href{https://github.com/AustinBoyuJiang/lambda-interpreter}{Lambda Calculus Interpreter} $|$\;C++}{Built a Lambda Calculus interpreter with a parser, AST, and normal order evaluator, using de Bruijn indices to avoid variable capture and supporting curried forms.
       }
     \resumeSubItem{\href{https://github.com/AustinBoyuJiang/LookAround-AI}{LookAround AI}, AdventureX (Multimodel Track Winner) $|$\;Python, React}{Built a voice controlled multi-agent tour guide using the TEN Framework, integrating Google Maps Street View API for route narration.
