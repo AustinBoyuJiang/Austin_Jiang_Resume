@@ -98,52 +98,42 @@
 \end{center}
 
 
-%--------Skills------------
-\section{Skills}
- \resumeSubHeadingListStart
-    \resumeSubItem {Languages}{C++, C, Python, Java, Bash, TypeScript, Rust}
-    \resumeSubItem {Tools/Libraries}{Linux, Git, CUDA, CMake, PyTorch, TensorFlow, SQL, Docker, Nginx, Flask, FastAPI, Express}
-    \resumeSubItem {Concepts}{GPU Programming,
-    Concurrency,
-    Lock-Free Data Structures,
-    Multithreading \& Synchronization,
-    High-Performance Computing,
-    Distributed Systems,
-    Compilers,
-    Database Systems
-    }
- \resumeSubHeadingListEnd
-
-
 %-----------Experience-----------------
 \section{Experience}
     \resumeSubHeadingListStart
-    
-    \resumeSubheading
-    {Multicore Lab, University of Waterloo}{Waterloo, ON, Canada}
-    {Undergraduate Research Assistant (supervised by Dr. Trevor Brown)}{C++, CUDA}{Sep 2025 -- Present}
-    \resumeItemListStart
-        \resumeItem{}{Implemented a \textbf{CPU lock-free data structures} baseline for controlled performance comparison.}
-        \resumeItem{}{Migrated the build to the \textbf{CUDA toolchain (nvcc)} to resolve host-device and compiler compatibility issues.}
-        \resumeItem{}{Developed a \textbf{VerlibAdapter abstraction} to support both \textbf{versioned and non-versioned} data structures.}
-        \resumeItem{}{Benchmarked Verlib (PPoPP’24) extension with \textbf{10M-key} range queries under \textbf{100+ threads} on GPU.}
-    \resumeItemListEnd
 
     \resumeSubheading
+    {Jane Street}{New York, NY}
+    {First-Year Trading and Technology Program Participant}{OCaml, Game Theory, Probability}{Mar 2026}
+    \resumeItemListStart
+\resumeItem{}{Invited as \textbf{1 of $\sim$50 students globally} ($<1\%$ acceptance rate) to study quantitative modeling and market making.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+    {Multicore Lab, University of Waterloo}{Waterloo, ON}
+    {Undergraduate Research Assistant (supervised by Dr. Trevor Brown)}{C++, CUDA}{Sep 2025 -- Present}
+    \resumeItemListStart
+        \resumeItem{}{Migrated the build to the \textbf{CUDA toolchain (nvcc)} to resolve host-device and compiler compatibility issues.}
+        \resumeItem{}{Developed a unified adapter to support \textbf{versioned vs. non-versioned} data structures within the benchmark.}
+        \resumeItem{}{Benchmarking Verlib (PPoPP’24) extension with \textbf{10M-key} range queries under \textbf{100+ threads} on GPU.}
+        \resumeItem{}{Implemented B+ Tree and ART using the \textbf{GPU Range Query Dictionary} library for performance comparison.}
+    \resumeItemListEnd
+
+\resumeSubheading
     {Wolfram Research}{Remote}
     {Research Intern}{Mathematica, Wolfram Kernels}{Sep 2025 -- Present}
     \resumeItemListStart
-    \resumeItem{}{Built a \textbf{parallel engine} automata handling \textbf{over 800K} units across \textbf{8 CPU cores}, achieving \textbf{1.4x speedup}.}
-    \resumeItem{}{Developed sparse frontier updates and dense scans, achieving a \textbf{127\% speedup} via load-balancing strategies.}
-    \resumeItem{}{Designed a \textbf{benchmark harness} measuring updates per second, active ratio, and scheduling overhead.}
+        \resumeItem{}{Developed multi-threaded engine managing \textbf{over 800K} data points across \textbf{8 CPU cores}, achieving \textbf{1.4x speedup}.}
+        \resumeItem{}{Developed sparse frontier updates and dense scans, achieving a \textbf{127\% speedup} via load-balancing strategies.}
+        \resumeItem{}{Designed a \textbf{benchmark harness} measuring updates per second, active ratio, and scheduling overhead.}
     \resumeItemListEnd
 
-    \resumeSubheading
-    {Wolfram Research}{Remote}
-    {Research Intern}{Mathematica}{Sep 2024 -- Jan 2025}
+    \vspace{2pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small Research Intern} \;$|$\;\textbf{\small Mathematica, Git} & \textit{\small Sep 2024 -- Jan 2025} \\
+    \end{tabular*}\vspace{-5pt}
     \resumeItemListStart
-        \resumeItem{}{Designed a pipeline voxelizing 3D meshes into \textbf{125K grid points}, achieving \textbf{3x GPU speedup}.}
-        \resumeItem{}{Developed algorithms to detect unsupported and overhanging regions, increasing infill stability by \textbf{55\%}.}
+        \resumeItem{}{Developed algorithms to voxelize 3D meshes, detect overhanging regions, increasing infill stability by \textbf{55\%}.}
         \resumeItem{}{Designed \textbf{benchmarking metrics} to measure density, connectivity, and printability of generated infills.}
         \resumeItem{}{Produced a first-author research paper, presented at the \textbf{Wolfram Technology Conference 2025}.}
     \resumeItemListEnd
@@ -154,13 +144,15 @@
 %-----------Projects-----------------
 \section{Projects}
   \resumeSubHeadingListStart \setlength{\itemsep}{0.8em}
-    \resumeSubItem{\href{https://nexhacks2026.vercel.app/}{ADaptiv}, NexHacks $|$\;Python}{Built a full video object replacement pipeline in ComfyUI, using Gemini for video understanding, Meta SAM3 for pixel-level masking, and Alibaba Wan, accelerated on RTX 4090.
-}
+    \resumeSubItem{\href{https://devpost.com/software/rewrite-2snpat}{Rewrite}, TreeHacks 2026 $|$\;Python}{Built a full video object replacement pipeline in ComfyUI, using Gemini for video understanding, Meta SAM3 for pixel-level masking, and Alibaba Wan, accelerated on RTX 4090.
+    }
+
+    \resumeSubItem{\href{https://nexhacks2026.vercel.app/}{ADaptiv}, NexHacks 2026 $|$\;Python}{Built a real-time VR game that runs Hunyuan Worldplay diffusion models on H200 GPU x4 with tensor parallelism to generate fully explorable and interactive 3D historical worlds at 12 fps in Unity.
+    }
     \resumeSubItem{\href{https://github.com/AustinBoyuJiang/lambda-interpreter}{Lambda Calculus Interpreter} $|$\;C++}{Built a Lambda Calculus interpreter with a parser, AST, and normal order evaluator, using de Bruijn indices to avoid variable capture and supporting curried forms.
       }
     \resumeSubItem{\href{https://github.com/AustinBoyuJiang/LookAround-AI}{LookAround AI}, AdventureX (Multimodel Track Winner) $|$\;Python, React}{Built a voice-controlled multi-agent tour guide using the TEN Framework, integrating Google Maps Street View API for route narration.
     }
-    \resumeSubItem{\href{https://github.com/AustinBoyuJiang/stock-explain}{Stock Explain}, Cal Hacks \textbar\;Python, React}{Built a full stack AI platform with an autonomous web browsing agent, integrating BrightData APIs and adaptive search strategies to actively fetch, unlock, and reason over live market data.}
     \resumeSubItem{\href{https://austinjiang.com/}{Personal Infrastructure \& Services} $|$\;Linux, FastAPI, SQL}{Built \& maintained a personal Linux server hosting a full-stack website behind Nginx, Cloudflare DNS, cloud storage, OpenVPN, email service, and FastAPI + SQL backends.}
 
   \resumeSubHeadingListEnd
@@ -170,14 +162,30 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Waterloo}{Waterloo, ON, Canada}
+      {University of Waterloo}{Waterloo, ON}
       {Bachelor of Computer Science (Honours)\;$|$\;Major GPA: 4.0/4.0}{}{Expected May 2028}
       \smallskip
       \resumeItemListStart
       \resumeItem{Scholarships}{René Descartes National Scholarship (\$25,000), President’s Scholarship of Distinction (\$2,500)}
-      \resumeItem{Coursework}{Data Structures, Algorithms, Development Tools}
+      \resumeItem{Coursework}{Data Structures, Algorithms, Development Tools, Linear Algebra}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
+
+
+%--------Skills------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \resumeSubItem {Languages}{C++, Python, C, Java, Bash, TypeScript, Rust}
+    \resumeSubItem {Tools/Libraries}{Linux, Git, CUDA, CMake, PyTorch, TensorFlow, SQL, Docker, Nginx, Flask, FastAPI, Express}
+    \resumeSubItem {Concepts}{
+    Concurrency,
+    Transformers,
+    Multithreading,
+    High-Performance Computing,
+    Distributed Systems,
+    Database
+    }
+ \resumeSubHeadingListEnd
   
   %-----------Achievements and Awards-----------------
 \section{Awards}
