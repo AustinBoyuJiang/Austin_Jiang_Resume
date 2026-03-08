@@ -5,7 +5,6 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
-% Force left alignment
 \longindentation=0pt
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.6em}
@@ -23,19 +22,19 @@
 
 Dear hiring manager,
 
-I am a Computer Science student at the University of Waterloo applying for the Software Engineering Intern role. I am particularly passionate about performance, runtime systems, and machine learning infrastructure.
+I am a Computer Science student at the University of Waterloo applying for the Software Engineering Intern role. My interests lie in performance engineering, concurrent systems, and machine learning systems.
 
-I am currently an undergraduate research assistant in the Multicore Lab at the UWaterloo, where I work on extending Verlib (PPoPP’24) with \textbf{lock-free GPU data structures} to support linearizable range queries at \textbf{10M-key scale}. My work focuses on \textbf{correctness and performance} under concurrency, including implementing \textbf{CPU baselines for controlled benchmarking} and debugging low-level GPU systems code.
+I am currently an undergraduate research assistant in the Multicore Lab at the University of Waterloo, where I work on benchmarking and extending the \textbf{Verlib (PPoPP’24)} system. My work includes migrating the build to the CUDA toolchain to resolve host-device compatibility issues, developing an adapter supporting versioned and non-versioned data structures, and benchmarking range queries at \textbf{10M-key scale under 100+ threads}. I also implemented B+ Tree and ART data structures using the GPU Range Query Dictionary library for performance comparison.
 
-Previously at Wolfram Research, I worked on a parallel cellular automata runtime, focusing on \textbf{execution design, load balancing, and benchmarking}. I built a parallel engine handling $\mathbf{10^{10}}$ cells across \textbf{8 CPU cores} and implemented sparse frontier updates and dense scans, achieving up to a \textbf{127\% speedup} on low-activity states.
+Previously at Wolfram Research, I developed a multi-threaded engine managing over 800K data points across 8 CPU cores and designed sparse frontier updates and dense scans, achieving a \textbf{127\% speedup} through improved load balancing. I also built a benchmarking harness measuring throughput. My early work has also produced a first-author research paper presented at the Wolfram Technology Conference 2025.
 
-My competitive programming background, including being \textbf{two-time Canadian Computing Olympiad Silver Medalist (national top 10)} and \textbf{USACO Platinum}, reflects my solid understanding of data structures, algorithms, and systems fundamentals.
+Recently, I was shortlisted for \textbf{Mistral AI’s core research internship}. Although the process was paused due to headcount, the technical evaluation confirmed my understanding of KV cache optimization, RoPE implementations, and memory-efficient Transformers. In addition, my TreeHacks project involved deploying Hunyuan WorldPlay 1.5 across 4× H200 GPUs using tensor parallelism.
 
-I am particularly interested in internships where correctness, reliability, and low-level understanding
-matter, and I would love the opportunity to contribute to your team.
+My competitive programming background, including being \textbf{two-time Canadian Computing Olympiad top 10 nationally} and USA Computing Olympuad highest division, showcases my strong problem-solving ability in algorithms and data structures.
+
+I would love the opportunity to contribute to your team.
 
 Sincerely,\\
 Austin Jiang
-
 
 \end{document}

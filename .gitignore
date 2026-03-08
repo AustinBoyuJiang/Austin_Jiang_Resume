@@ -1,6 +1,8 @@
 .DS_Store
 .vscode
 
+tmp/
+
 # LaTeX core auxiliary files
 *.aux
 *.log
