@@ -92,8 +92,8 @@
     \small
     +1 (604) 754-1808 \;$|$\;
     \href{mailto:a68jiang@uwaterloo.ca}{a68jiang@uwaterloo.ca} \;$|$\;
-    \href{https://www.linkedin.com/in/austin-boyu-jiang}{linkedin.com/in/austin-boyu-jiang} \;$|$\;
-    \href{https://github.com/AustinBoyuJiang}{github.com/AustinBoyuJiang}
+    \href{https://www.linkedin.com/in/austinboyujiang}{linkedin.com/in/austinboyujiang} \;$|$\;
+    \href{https://github.com/austinboyujiang}{github.com/austinboyujiang}
   \fi
 \end{center}
 
@@ -105,21 +105,21 @@
     
   \resumeSubheading
     {Noah's Ark Lab, Huawei Canada}{Toronto, ON}
-    {Research Intern}{Python, PyTorch}{May 2026 -- Aug 2026}
+    {Research Intern}{Python, PyTorch}{May 2026 -- Present}
     \resumeItemListStart
-\resumeItem{}{
-  Working on efficient spatial foundation model for 3D reconstruction.
-}
-  \resumeItemListEnd
+        \resumeItem{}{Designed an efficient 3D reconstruction model to reduce token redundancy in Visual Geometry Transformer.}
+        \resumeItem{}{Introduced an \textbf{residual-update gating} method for adaptive token early-halt to freeze background computation.}
+        \resumeItem{}{Achieved a \textbf{30\% speedup} and \textbf{3\% accuracy boost}, breaking the accuracy-compute Pareto frontier.}
+        \resumeItem{}{Built a \textbf{3-stage desensitization training} method to jointly optimize gating layers and fine-tune the backbone.}
+    \resumeItemListEnd
 
   \resumeSubheading
     {Multicore Lab, University of Waterloo}{Waterloo, ON}
-    {Undergraduate Research Assistant (Supervised by Dr. Trevor Brown)}{C++, CUDA}{Sep 2025 -- May 2026}
+    {Undergraduate Research Assistant (Supervised by Dr. Trevor Brown)}{C++, CUDA}{Sep 2025 -- Present}
     \resumeItemListStart
-        \resumeItem{}{Migrated the build to the \textbf{CUDA toolchain (nvcc)} to resolve host-device and compiler compatibility issues.}
-        \resumeItem{}{Developed a unified adapter to support \textbf{versioned vs. non-versioned} data structures within the benchmark.}
-        \resumeItem{}{Benchmarking Verlib (PPoPP’24) extension with \textbf{10M-key} range queries under \textbf{100+ threads} on GPU.}
-        \resumeItem{}{Implemented B+ Tree and ART using the \textbf{GPU Range Query Dictionary} library for performance comparison.}
+        \resumeItem{}{Developed a unified adapter to support versioned and non-versioned data structures within the benchmark.}
+        \resumeItem{}{Benchmarking Version Lib (PPoPP’24) extension with \textbf{10M-key} range queries under \textbf{100+ threads} on GPU.}
+        \resumeItem{}{Built \textbf{B+ Tree} and \textbf{ART Tree} against a baseline \textbf{GPU B-Tree} using the GPU Range Query Dictionary library.}
     \resumeItemListEnd
     
 
@@ -187,27 +187,28 @@
 \section{Skills}
  \resumeSubHeadingListStart
     \resumeSubItem {Languages}{C++, Python, C, Java, Bash, TypeScript, Rust}
-    \resumeSubItem {Tools/Libraries}{Linux, Git, CUDA, CMake, PyTorch, TensorFlow, SQL, Docker, Nginx, Flask, FastAPI, Express}
-    \resumeSubItem {Concepts}{Concurrency,
+    \resumeSubItem {Tools/Libraries}{Pytorch, Linux, Git, CUDA, CMake, Numpy, SQL, Docker, Nginx, Flask, FastAPI}
+    \resumeSubItem {Concepts}{
     Transformers,
+    Large Language Models,
+    Concurrency,
     Compilers,
-    Multithreading,
     Distributed Systems,
     Database
     }
  \resumeSubHeadingListEnd
   
   %-----------Achievements and Awards-----------------
-\section{Awards}
+\section{Achievements}
   \resumeSubHeadingListStart
+    \resumeSubItem {Canadian Computing Olympiad 2026}
+      {Authored Day 1 Problem 3 (Contestant average score: 0.7/25).}
     \resumeSubItem {Discover Citadel Program}
-      {Invited to learn about quantitative research and trading ($<1\%$ acceptance rate).}
+      {Invited as 1 of $\sim$100 students ($<1\%$ acceptance rate).}
     \resumeSubItem {Jane Street First-Year Trading and Technology Program}
       {Invited as 1 of $\sim$100 students ($<1\%$ acceptance rate).}
-    \resumeSubItem {\href{https://www.facebook.com/codingcompetitions/hacker-cup/2025/certificate/1204009674111947}{Meta Hacker Cup Round 2}}
-      {Ranked 813th out of 13,779 participants overall, top 6\% worldwide.}
     \resumeSubItem {Generation Google Scholarship}
-      {Google’s flagship undergraduate scholarship for impact in technology (1 of 55).}
+      {Google's flagship global undergrad scholarship for impact in technology (1 of 55).}
     \resumeSubItem {Canadian Computing Olympiad \href{https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2024CCOResults.pdf}{2024} \& \href{https://cemc.uwaterloo.ca/sites/default/files/documents/2025/cco_summary.pdf}{2025}}
       {Silver medalist x2 (5th and 6th out of 10,000+ participants).}
     \resumeSubItem {USACO 2024 (Platinum)} {Achieved the highest division, ranked top 100 out of 15,564 participants.}
