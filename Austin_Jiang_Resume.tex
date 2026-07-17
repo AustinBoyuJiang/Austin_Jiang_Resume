@@ -101,46 +101,45 @@
 %-----------Experience-----------------
 \section{Experience}
     \resumeSubHeadingListStart
-    
+
+  \resumeSubheading
+    {DeepInfra}{Palo Alto, CA}
+    {Software Engineer Intern}{Python, PyTorch, Triton}{Incoming Jan 2027 -- Apr 2027}
+    \resumeItemListStart
+        \resumeItem{}{Will work on inference accleration for open-source large language models.}
+    \resumeItemListEnd
     
   \resumeSubheading
     {Noah's Ark Lab, Huawei Canada}{Toronto, ON}
     {Research Intern}{Python, PyTorch}{May 2026 -- Present}
     \resumeItemListStart
-        \resumeItem{}{Designed an efficient 3D reconstruction model to reduce token redundancy in Visual Geometry Transformer.}
-        \resumeItem{}{Introduced an \textbf{residual-update gating} method for adaptive token early-halt to freeze background computation.}
-        \resumeItem{}{Achieved a \textbf{30\% speedup} and \textbf{3\% accuracy boost}, breaking the accuracy-compute Pareto frontier.}
-        \resumeItem{}{Built a \textbf{3-stage desensitization training} method to jointly optimize gating layers and fine-tune the backbone.}
+
+
+   \resumeItem{}{Designed an efficient 3D reconstruction model using residual-update gating for adaptive token early-halt, achieving a \textbf{57\% latency reduction} and \textbf{11\% depth accuracy improvement} on the 7-Scenes dataset.}
+\resumeItem{}{Developed a token aggregation framework to retain pruned tokens, limiting camera pose estimation \textbf{loss to $\mathbf{<1\%}$}.}
+    \resumeItem{}{Introduced a budget-controllable routing knob with dynamic loss reweighting, reducing overall training costs to \textbf{1/3}.}
     \resumeItemListEnd
 
   \resumeSubheading
     {Multicore Lab, University of Waterloo}{Waterloo, ON}
     {Undergraduate Research Assistant (Supervised by Dr. Trevor Brown)}{C++, CUDA}{Sep 2025 -- Present}
-    \resumeItemListStart
-        \resumeItem{}{Developed a unified adapter to support versioned and non-versioned data structures within the benchmark.}
-        \resumeItem{}{Benchmarking Version Lib (PPoPP’24) extension with \textbf{10M-key} range queries under \textbf{100+ threads} on GPU.}
-        \resumeItem{}{Built \textbf{B+ Tree} and \textbf{ART Tree} against a baseline \textbf{GPU B-Tree} using the GPU Range Query Dictionary library.}
-    \resumeItemListEnd
-    
+
+\resumeItemListStart
+    \resumeItem{}{Developed a concurrent versioned pointer adapter within the benchmark, boosting throughput by \textbf{$\sim$2x}.}
+    \resumeItem{}{Integrated a GPU B-Tree batching update mechanism, accelerating benchmark prefilling speed by \textbf{370\%+}.}
+    \resumeItem{}{Implemented high-throughput B+ Tree and ART Tree variants, supporting \textbf{10M-key} queries under \textbf{100+ threads}.}
+\resumeItemListEnd
+
 
 \resumeSubheading
     {Wolfram Research}{Remote}
     {Research Intern (Part-time)}{Mathematica}{Sep 2025 -- May 2026}
-    \resumeItemListStart
-        \resumeItem{}{Developed multi-threaded engine managing \textbf{over 800K} data points across \textbf{8 CPU cores}, achieving \textbf{1.4x speedup}.}
-        \resumeItem{}{Developed sparse frontier updates and dense scans, achieving a \textbf{127\% speedup} via load-balancing strategies.}
-        \resumeItem{}{Designed a \textbf{benchmark harness} measuring updates per second, active ratio, and scheduling overhead.}
-    \resumeItemListEnd
 
-    \vspace{2pt}
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small Research Intern (Part-time)} \;$|$\;\textbf{\small Mathematica} & \textit{\small Sep 2024 -- Jan 2025} \\
-    \end{tabular*}\vspace{-5pt}
     \resumeItemListStart
-        \resumeItem{}{Developed algorithms to voxelize 3D meshes, detect overhanging regions, increasing infill stability by \textbf{55\%}.}
-        \resumeItem{}{Designed \textbf{benchmarking metrics} to measure density, connectivity, and printability of generated infills.}
-        \resumeItem{}{Produced a first-author research paper, presented at the \textbf{Wolfram Technology Conference 2025}.}
-    \resumeItemListEnd
+      \resumeItem{}{Engineered a multi-threaded framework for \textbf{800K+} expressions across \textbf{8 cores}, cutting runtime by \textbf{56\%}.}
+      \resumeItem{}{Implemented sparse updates and dense scans via dynamic load-balancing, boosting traversal by \textbf{27\%}.}
+      \resumeItem{}{Authored a first-author paper on parallel algorithms, presented at the \textbf{Wolfram Technology Conference 2025}.}
+  \resumeItemListEnd
 
   \resumeSubHeadingListEnd
   
@@ -149,11 +148,10 @@
 %-----------Projects-----------------
 \section{Projects}
   \resumeSubHeadingListStart \setlength{\itemsep}{0.8em}
-    \resumeSubItem{\href{https://devpost.com/software/rewrite-2snpat}{Rewrite}, TreeHacks 2026 $|$\;Python}{Built a real-time 3D VR game in Unity that is fully interactive, deploying Hunyuan WorldPlay 1.5 on Modal across 4× H200 GPUs with tensor parallelism (accelerating from 1 fps to 12 fps).
+    \resumeSubItem{\href{https://devpost.com/software/rewrite-2snpat}{Rewrite}, TreeHacks 2026 $|$\;Python}{Built a fully interative real-time 3D VR game leveraging Hunyuan WorldPlay 1.5, deploying tensor parallelism on Modal across 4x H200 GPUs to boost frame rates from 1 to \textbf{12 FPS}.
     }
 
-    \resumeSubItem{\href{https://nexhacks2026.vercel.app/}{ADaptiv}, NexHacks 2026 $|$\;Python}{Built a full video object replacement pipeline in ComfyUI, using Gemini for video understanding, Meta SAM3 for pixel-level masking, and Alibaba Wan, accelerated on RTX 4090.
-    }
+    \resumeSubItem{\href{https://devpost.com/software/nexhacks-k016op}{ADaptiv}, CMU NexHacks 2026 $|$\;Python}{Built a video object replacement pipeline in ComfyUI using Gemini, SAM3, and Wan2.1, optimizing execution on an RTX 4090 to achieve a \textbf{3x speedup}.}
     
     \resumeSubItem{\href{https://github.com/AustinBoyuJiang/LookAround-AI}{LookAround AI}, AdventureX (Multimodal Track Winner) $|$\;Python, React}{Built a voice-controlled multi-agent tour guide using the TEN Framework, integrating Google Maps Street View API for route narration.
     }
@@ -173,7 +171,7 @@
 
     \resumeSubheading
       {University of Waterloo}{Waterloo, ON}
-      {Bachelor of Computer Science (Honours)\;$|$\;Major GPA: 4.0/4.0}{}{Expected Graduation: Apr 2029}
+      {Bachelor of Computer Science (Honours)\;$|$\;Major GPA: 4.0/4.0}{}{Expected Graduation: Apr 2028}
       \smallskip
       \resumeItemListStart
       \resumeItem{Scholarships}{René Descartes National Scholarship (\$25,000), President's Scholarship of Distinction (\$2,500)}
@@ -185,18 +183,11 @@
 
 %--------Skills------------
 \section{Skills}
- \resumeSubHeadingListStart
-    \resumeSubItem {Languages}{C++, Python, C, Java, Bash, TypeScript, Rust}
-    \resumeSubItem {Tools/Libraries}{PyTorch, Linux, Git, CUDA, CMake, Numpy, SQL, Docker, Nginx, Flask, FastAPI}
-    \resumeSubItem {Concepts}{
-    Transformers,
-    Large Language Models,
-    Concurrency,
-    Compilers,
-    Distributed Systems,
-    Database
-    }
- \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+    \resumeSubItem{Languages}{C++, Python, C, Unity (C\#), Java, Bash, TypeScript}
+    \resumeSubItem{Tools/Libraries}{PyTorch, Linux, Git, CUDA, CMake, NumPy, SQL, Docker, Nginx, Flask, FastAPI}
+    \resumeSubItem{Concepts}{Transformers, Large Language Models, Concurrency, Compilers, Distributed Systems, Databases}
+\resumeSubHeadingListEnd
   
   %-----------Achievements and Awards-----------------
 \section{Achievements}
@@ -211,7 +202,7 @@
       {Google's flagship global undergrad scholarship for impact in technology (1 of 55).}
     \resumeSubItem {Canadian Computing Olympiad \href{https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2024CCOResults.pdf}{2024} \& \href{https://cemc.uwaterloo.ca/sites/default/files/documents/2025/cco_summary.pdf}{2025}}
       {Silver medalist x2 (5th and 6th out of 10,000+ participants).}
-    \resumeSubItem {USACO 2024 (Platinum)} {Achieved the highest division, ranked top 100 out of 15,564 participants.}
+    \resumeSubItem {USA Computing Olympiad 2024} {Achieved the platinum division, ranked top 100 out of 15,564 participants.}
   \resumeSubHeadingListEnd
 
 
